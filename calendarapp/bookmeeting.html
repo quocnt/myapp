@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='./fullcalendar/fullcalendar.css' rel='stylesheet' />
+<link href='./stylesheets/base.css' rel='stylesheet' />
+<link href='./stylesheets/jquery.timepicker.css' rel='stylesheet' />
+<link href='./fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+<link href="stylesheets/bootstrap.min.css" type="text/css" rel="stylesheet" media="screen">
+<script src='./jquery/jquery-1.9.1.min.js'></script>
+<script src='./jquery/jquery-ui-1.10.2.custom.min.js'></script>
+<script src='./fullcalendar/fullcalendar.min.js'></script>
+<script src='./javascript/bootstrap.min.js'></script>
+<script src='./javascript/jquery.timepicker.min.js'></script>
+<script src='./javascript/json2.js'></script>
+<script src='./javascript/addEvent.js'></script>
+<script src='./javascript/datepair.js'></script>
+<script src='./javascript/base.js'></script>
+<style>
+
+	body {
+		margin: 40px 40px;
+		font-size: 14px;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+      }
+  .date{
+    width: 70px;
+  }
+  #buton{
+    display: inline;
+  }
+</style>
+</head>
+<body>
+  <div id="content">
+    <form>
+      <label>
+        <b> Book a meeting </b>
+      </label>
+      <input id="summary" type="text" placeholder="Untitled event"/>
+      <label>
+        <b> Organizer </b>
+        <input type="text"/>
+      </label>
+      <label>
+        <b> Place </b>
+        <select id="location">
+          <option value="GoLab Conference Room">GoLab Conference Room</option>
+          <option value="Private Workspace">Private Workspace</option>
+        </select>
+      </label>
+      <p class="datepair" data-language="javascript">
+      <input id="datestart" type="text" class="date start">
+      <input id="timestart" type="text" class="time start ui-timepicker-input" autocomplete="off"> to
+      <input id="timeend" type="text" class="time end ui-timepicker-input" autocomplete="off">
+      <input id="dateend" type="text" class="date end">
+      </p>
+    </form>
+          <div class="buton">
+        <button id="save" class="btn btn-danger">Save</button>
+        <button id="discard" class="btn">Discard </button>
+      </div>
+  </div>
+  <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href='./fullcalendar/fullcalendar.css' rel='stylesheet' />
+<link href='./fullcalendar/fullcalendar.print.css' rel='stylesheet' media='print' />
+<link href="stylesheets/bootstrap.min.css" type="text/css" rel="stylesheet" media="screen">
+<script src='./jquery/jquery-1.9.1.min.js'></script>
+<script src='./jquery/jquery-ui-1.10.2.custom.min.js'></script>
+<script src='./fullcalendar/fullcalendar.min.js'></script>
+<script src='./javascript/bootstrap.min.js'></script>
+<script src='./javascript/json2.js'></script>
+<script src='./javascript/app.js'></script>
+<style>
+
+	body {
+		margin-top: 40px;
+		font-size: 14px;
+		font-family: "Lucida Grande",Helvetica,Arial,Verdana,sans-serif;
+		}
+  #button{
+    margin: 20px 550px;
+  }
+  #title{
+    margin-left: 150px;
+
+  }
+	#calendar {
+		width: 900px;
+		margin: 0 auto;
+		}
+</style>
+</head>
+<body>
+  <div id='title'>
+  <label>
+    <b>GoLab Conference Room</b>
+    <button id="button" style="margin-left: 10px;"class='btn btn-success'>book a meeting</button>
+  </label>
+  
+  </div>
+  <button id="authorize-button" style="visibility: hidden">Authorize</button>
+  <div id='calendar'></div>
+  <script src="https://apis.google.com/js/client.js?onload=handleClientLoad"></script>
+</body>
+</html>
