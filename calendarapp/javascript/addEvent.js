@@ -13,7 +13,7 @@ $(document).ready(function() {
 		makeApiCall(st,end,summary,location);
 	});
 	$('#discard').click(function(){
-		location.href = 'canvas.html';
+		location.href = 'canvas.html'; //
 	});
 })
 function convertDate(d,t){
